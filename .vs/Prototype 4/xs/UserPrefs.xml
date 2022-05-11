@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{53F2696F-91F9-D403-3CD8-B368D375157F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/SpawnManager.cs" Line="30" Column="100" />
-      <File FileName="Assets/Scripts/Enemy.cs" />
-      <File FileName="Assets/Scripts/RotateCamera.cs" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="29" Column="10" />
+      <File FileName="Assets/Scripts/RotateCamera.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/MainMenu.cs" Line="15" Column="28" />
       <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
     </Files>
@@ -14,7 +14,7 @@
           <Node name="Prototype 4" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="MainMenu.cs" selected="True" />
+                <Node name="PlayerController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
