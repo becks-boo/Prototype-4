@@ -28,13 +28,8 @@ public class PlayerController : MonoBehaviour
         Physics.gravity *= gravityModifier;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    private void Update()
     {
-        float forwardInput = Input.GetAxis("Vertical");
-        playerRb.AddForce(focalPoint.transform.forward * speed * forwardInput);
-        powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
-
         // jump
         if (Input.GetKeyDown(KeyCode.Space) && !gameOver && (isOnGround == true))
         {
@@ -42,13 +37,22 @@ public class PlayerController : MonoBehaviour
             isOnGround = false;
         }
 
-        // Code for restart
-        //if (playerObj.transform.position.y < -10)
-        //{
-        //    gameOver = true;
-        //    Debug.Log("Game Over!");
-        //    FindObjectOfType<GameManager>().EndGame();
-        //}
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        float forwardInput = Input.GetAxis("Vertical");
+        playerRb.AddForce(focalPoint.transform.forward * speed * forwardInput);
+        powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
+
+        
+        if (playerObj.transform.position.y < -10)
+        {
+            gameOver = true;
+            Debug.Log("Game Over!");
+            FindObjectOfType<GameManager>().EndGame();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
