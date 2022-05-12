@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{763DCF33-0D33-3684-09A6-2B8B6168F8C1}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameOverMenu.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameManager.cs" Line="20" Column="1" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="51" Column="10" />
+      <File FileName="Assets/GameOverMenu.cs" Line="16" Column="52" />
+      <File FileName="Assets/Scripts/MainMenu.cs" Line="15" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Prototype-4" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7ee0c4bd-1d50-498f-9acc-95b56838d296" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
