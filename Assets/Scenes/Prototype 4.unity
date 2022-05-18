@@ -1057,8 +1057,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1834848301}
   highscoreText: {fileID: 1012328412}
-  scoreCount: 10
-  highscoreCount: 100
+  scoreCount: 0
+  highscoreCount: 0
   pointsPerEnemy: 10
   scoreIncreasing: 0
 --- !u!1 &1322854576
@@ -1530,7 +1530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f3746cd0d19b4eae8188a360fe394f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 270
+  speed: 290
   gravityModifier: 2
   jumpForce: 600
   hasPowerup: 0
