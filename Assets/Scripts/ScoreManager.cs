@@ -11,27 +11,22 @@ public class ScoreManager : MonoBehaviour
 
     public float scoreCount;
     public float highscoreCount;
-    public float pointsPerEnemy;
+    
 
     public bool scoreIncreasing;
-
-    // public bool scoreIncreasing;
 
     void Start()
     {
         if (PlayerPrefs.HasKey("Highscore"))
         {
+            // To reset the highscore uncomment and play in unity one time
+            //PlayerPrefs.SetFloat("Highscore", 0);
             highscoreCount = PlayerPrefs.GetFloat("Highscore");
         }
     }
 
     void Update()
     {
-        if (scoreIncreasing)
-        {
-            scoreCount += pointsPerEnemy;
-        }
-
         if (scoreCount > highscoreCount)
         {
             highscoreCount = scoreCount;
@@ -42,8 +37,11 @@ public class ScoreManager : MonoBehaviour
         highscoreText.text = "Highscore: " + Mathf.Round(highscoreCount);
     }
 
-    public void AddScore(int pointsToAdd)
+    public void AddScore(int pointsPerEnemy)
     {
-        scoreCount += pointsToAdd;
+        if (scoreIncreasing)
+        {
+            scoreCount += pointsPerEnemy;
+        }
     }
 }

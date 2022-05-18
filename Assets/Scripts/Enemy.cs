@@ -5,13 +5,20 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float speed = 3.0f;
-    public int scoreToGive;
+    private int pointsPerEnemy = 10;
 
     private Rigidbody enemyRb;
     private GameObject player;
     private ScoreManager theScoreManager;
 
-    // Start is called before the first frame update
+    public int PointsPerEnemy
+    {
+        get
+        {
+            return pointsPerEnemy;
+        }
+    }
+
     void Start()
     {
         theScoreManager = FindObjectOfType<ScoreManager>();
@@ -19,7 +26,6 @@ public class Enemy : MonoBehaviour
         player = GameObject.Find("Player");
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
@@ -28,8 +34,8 @@ public class Enemy : MonoBehaviour
 
         if (transform.position.y < -10)
         {
-            Destroy(gameObject);
-            theScoreManager.AddScore(scoreToGive);
+            theScoreManager.AddScore(pointsPerEnemy);
+            Destroy(gameObject); 
         }
     }
 }

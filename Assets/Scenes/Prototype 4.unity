@@ -1059,8 +1059,8 @@ MonoBehaviour:
   highscoreText: {fileID: 1012328412}
   scoreCount: 0
   highscoreCount: 0
-  pointsPerEnemy: 10
-  scoreIncreasing: 0
+  pointsPerEnemy: 0
+  scoreIncreasing: 1
 --- !u!1 &1322854576
 GameObject:
   m_ObjectHideFlags: 0

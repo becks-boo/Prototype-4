@@ -21,18 +21,5 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("GAME OVER!");
         gameOverMenu.ShowGameOverMenu();
-        // Invoke("Restart", restartDelay);
     }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        theScoreManager.scoreIncreasing = true;
-    }
-
-    //public void ShowGameOverMenu()
-    //{
-    //    gameOverMenu = GameObject.FindWithTag("Game Over");
-    //    gameOverMenu.SetActive(true);
-    //}
 }

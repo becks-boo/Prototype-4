@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour
 
     public GameObject powerupIndicator;
 
-    // Start is called before the first frame update
     void Start()
     {
         playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -39,7 +38,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float forwardInput = Input.GetAxis("Vertical");
