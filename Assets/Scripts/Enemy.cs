@@ -17,6 +17,11 @@ public class Enemy : MonoBehaviour
         {
             return pointsPerEnemy;
         }
+
+        set
+        {
+            pointsPerEnemy = value;
+        }
     }
 
     void Start()
