@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
+    private ScoreManager theScoreManager;
+
     public void ShowGameOverMenu()
     {
+        theScoreManager = FindObjectOfType<ScoreManager>();
+        theScoreManager.scoreIncreasing = false;
         gameObject.SetActive(true);
     }
 

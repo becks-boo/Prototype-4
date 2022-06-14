@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     private GameObject focalPoint;
     private GameObject playerObj = null;
-    private float powerupStrength = 800.0f;
+    private float powerupStrength = 850.0f;
 
     public float speed = 2.0f;
     public float gravityModifier;
@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour
 
     public GameObject powerupIndicator;
 
-    // Start is called before the first frame update
     void Start()
     {
         playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -39,7 +38,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float forwardInput = Input.GetAxis("Vertical");

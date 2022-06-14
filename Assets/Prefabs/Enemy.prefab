@@ -128,3 +128,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 170
+  scoreToGive: 10
+  pointsPerEnemy: 15
